@@ -1,6 +1,5 @@
 # Data Analytics Bootcamp Final Project
-
-The project is about 'Facial emotion recognition" and focuses on using AI for facial emotion detection. 
+This is the final project developed during the Data Analytics bootcamp with IRONHACK. The project focuses on 'Facial emotion recognition" and utilizes AI for detecting emotions based on facial expressions. 
 
 ## Project Goal
 The main goal for this project is to determine  whether or not AI can be as good as human or better in facial emotion recognition. In theory, AI is expected to be free from subjective biases. However, exploring factors influencing the model, such as data quality and quantity, is crucial to understanding its performance.
