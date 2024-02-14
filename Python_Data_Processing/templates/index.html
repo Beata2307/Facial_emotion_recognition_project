@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Emotions data base </title>
+    <style>
+        li {
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color:teal;">  Welcome to the facial emotion recognition database </h1>
+    <p style="font-size: 17px;"> The available data was collected for facial emotion recognition project and includes images that capture different facial expressions. There are 3357 images in total and they originate from diverse data sources. For those downloaded via API, faces were initially detected and extracted from images. Images from Kaggle and FER-2013 already possess the appropriate format. </p>
+    <p style="font-size: 17px;"> The available options for exploration are below. Please enter the selected option in the explore window. </p>
+    <p style="font-size: 17px;"> To adjust the number of results per page, modify the associated <strong>page</strong> and <strong>page_size</strong> parameters: </p>
+    <p style="font-size: 17px;"> <code> http://127.0.0.1:8080/images/<strong>?page=1&page_size=50 </strong> </code>  </p>
+    <ul>
+
+        
+        <h3 style="color:DodgerBlue;"> To see list of all collected images use this link: </h3>
+        <li><a href="/images"> List of all images</a></li>
+    <p style="font-size: 17px;"> To access a single image, go to <strong>/images/{img_id}</strong> and replace <strong>{img_id}</strong> with the image number (1-3357).  </p>
+          
+        <h3 style="color:DodgerBlue;"> Explore Images based on the source:</h3>
+        <p> 1 : data from PixaBay API </p>
+        <p> 2 : data from DuckDuckGo API </p>
+        <p> 3 : data from Kaggle </p>
+        <p> 4 : data from FER-2013 </p>
+        <li>
+            <form action="/images/sources" method="GET">
+                <label for="source_id">Source ID:</label>
+                <input type="number" id="source_id" name="source_id" required>
+                <button type="submit">Explore</button>
+            </form>
+        </li>
+        
+
+        <h3 style="color:DodgerBlue;"> Explore Images based on color: </h3>
+        <p> 0 : Grayscale </p>
+        <p> 1 : RGB  </p>
+        <li>
+            <form action="/images/colors" method="GET">
+                <label for="colors">Color:</label>
+                <input type="number" id="colors" name="colors" required>
+                <button type="submit">Exploret</button>
+            </form>
+        </li>
+        
+        <h3 style="color:DodgerBlue;"> Explore Images based on aspect ratio:</h3>
+        <p> In the "Aspect ratio" field, please enter the one of the numbers: </p>
+        <p> 0 : '&lt; 1' </p>
+        <p> 1 : = 1  </p>
+        <p> 2 : '&gt; 1' </p>
+        <li>
+            <form action="/images/aspect_ratio" method="GET">
+                <label for="aspect_ratio">Aspect ratio:</label>
+                <input type="number" id="aspect_ratio" name="aspect_ratio" required>
+                <button type="submit">Explore</button>
+            </form>
+        </li>    
+        
+        <h3 style="color:DodgerBlue;"> Explore Images based on facial emotion:</h3>
+        <p> 0 : Anger </p>
+        <p> 1 : Disgust </p>
+        <p> 2 : Fear </p>
+        <p> 3 : Happiness </p>
+        <p> 4 : Sadness </p>
+        <p> 5 : Surprise </p>
+        <p> 6 : Neutral </p>
+        <li>
+            <form action="/images/emotions" method="GET">
+                <label for="emotion">Emotion ID:</label>
+                <input type="number" id="emotion" name="emotion" required>
+                <button type="submit">Explore</button>
+            </form>
+        </li>
+       
+        <h3 style="color:DodgerBlue;"> 
+View the facial action units associated with each emotion:</h3>
+        <p> Most of the options are as above, except for the neutral face (unavailable), and an additional option: </p>
+        <p> 7 : Contempt </p>
+
+        <li>
+            <form action="/images/emotions/faces" method="GET">
+                <label for="face">Emotion ID:</label>
+                <input type="number" id="face" name="face" required>
+                <button type="submit">Explore</button>
+            </form>
+        </li>
+             
+        <!-- Add a form to explore sets by production year -->      
+    </ul>
+</body>
+</html>
