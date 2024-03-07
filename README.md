@@ -41,4 +41,8 @@ The "ML_Models" directory contains Python files. To assess the performance of ma
 - Transfer Learning by adjusting pre-trained models for facial emotion recognition [[code](https://github.com/Beata2307/Facial_emotion_recognition_project/blob/main/ML_models/Pre_trained_model.ipynb)],
 - Convolutional Neural Networks (CNNs) - different models were tested and trained using Colab resources [[code](https://github.com/Beata2307/Facial_emotion_recognition_project/blob/main/ML_models/CNN_models_test.ipynb)].
 
-A comparison of algorithm performance is available in the presentation. [link](https://github.com/Beata2307/Facial_emotion_recognition_project/blob/main/Facial_emotion_recognition.pdf)
+Algorithms' performances are compared in the presentation. [link](https://github.com/Beata2307/Facial_emotion_recognition_project/blob/main/Facial_emotion_recognition.pdf)
+
+### Potential Model Improvements:
+- **Increase Data Set Size or use built-in data augmentation techniques** to prevent overfitting and improve model generalization.
+- Improve emotion recognition by **incorporating facial features**, such as eyebrow position or mouth shapes.
