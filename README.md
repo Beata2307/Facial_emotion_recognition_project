@@ -19,16 +19,16 @@ This repository contains the final project developed during the Data Analytics b
 ### 2. Data Cleaning and Exploratory Data Analysis (EDA):
 **Image Processing for API Data:**
 - Check, relabel, or remove images not well-suited for face analysis.
-- Utilize a Haarcascade classifier to detect and crop faces in the cleaned dataset [[code](https://github.com/Beata2307/Facial_emotion_recognition_project/blob/main/Python_Data_Processing/Extract_faces_from_images.ipynb)]
+- Utilize a Haarcascade classifier to detect and crop faces in the cleaned dataset. [[code](https://github.com/Beata2307/Facial_emotion_recognition_project/blob/main/Python_Data_Processing/Extract_faces_from_images.ipynb)]
 
 **Image Selection for Flat Files Data:**
-- Randomly select a specified number of images for each emotion category [[code](https://github.com/Beata2307/Facial_emotion_recognition_project/blob/main/Python_Data_Processing/Extract_faces_from_images.ipynb)]
+- Randomly select a specified number of images for each emotion category. [[code](https://github.com/Beata2307/Facial_emotion_recognition_project/blob/main/Python_Data_Processing/Extract_faces_from_images.ipynb)]
 
 **CSV File:**
-- Clean CSV files to improve data quality and perform exploratory data analysis (EDA) [[code](https://github.com/Beata2307/Facial_emotion_recognition_project/blob/main/Python_Data_Processing/EDA.ipynb)]
+- Clean CSV files to improve data quality and perform exploratory data analysis (EDA). [[code](https://github.com/Beata2307/Facial_emotion_recognition_project/blob/main/Python_Data_Processing/EDA.ipynb)]
 
 ### 3. Database Management:
-- Create a database with cleaned images, use separate tables for images from different sources and their metadata (e.g., expressed emotion, dimensions, aspect ratio) [[code](https://github.com/Beata2307/Facial_emotion_recognition_project/blob/main/Python_Data_Processing/Images_to_DataFrames.ipynb)]
+- Create a database with cleaned images, use separate tables for images from different sources and their metadata (e.g., expressed emotion, dimensions, aspect ratio). [[code](https://github.com/Beata2307/Facial_emotion_recognition_project/blob/main/Python_Data_Processing/Images_to_DataFrames.ipynb)]
 - Establish relations between tables, develop an Entity Relationship Diagram (ERD), and use SQL queries for data insights.[[code](https://github.com/Beata2307/Facial_emotion_recognition_project/blob/main/SQL/final_project_DB.sql)]
 
 ### 4. API Development:
@@ -39,9 +39,9 @@ This repository contains the final project developed during the Data Analytics b
 The "ML_Models" directory contains Python files. To assess the performance of machine learning models, few approaches were examined:
 - Deep Learning algorithms [[code](https://github.com/Beata2307/Facial_emotion_recognition_project/blob/main/ML_models/Deep_Learning.ipynb)],
 - Transfer Learning by adjusting pre-trained models for facial emotion recognition [[code](https://github.com/Beata2307/Facial_emotion_recognition_project/blob/main/ML_models/Pre_trained_model.ipynb)],
-- Convolutional Neural Networks (CNNs) - different models were tested and trained using Colab resources [[code](https://github.com/Beata2307/Facial_emotion_recognition_project/blob/main/ML_models/CNN_models_test.ipynb)].
+- Convolutional Neural Networks (CNNs) - different models were tested and trained using Colab resources [[code](https://github.com/Beata2307/Facial_emotion_recognition_project/blob/main/ML_models/CNN_models_test.ipynb)]
 
-Algorithms' performances are compared in the presentation. [link](https://github.com/Beata2307/Facial_emotion_recognition_project/blob/main/Facial_emotion_recognition.pdf)
+Algorithms' performances are compared in the [presentation](https://github.com/Beata2307/Facial_emotion_recognition_project/blob/main/Facial_emotion_recognition.pdf).
 
 ### Potential Model Improvements:
 - **Increase Data Set Size or use built-in data augmentation techniques** to prevent overfitting and improve model generalization.
